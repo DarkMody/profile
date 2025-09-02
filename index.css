@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+    position: relative;
+    width: 30%;
+    background-color: hsl(216, 50%, 16%);
+    margin: 100px auto;
+    border-radius: 20px;
+    /* padding-bottom: 10px; */
+    height: 600px;
+}
+
+.main {
+    width: 90%;
+    margin: 5%;
+    border-radius: 10px;
+    height: 90%;
+}
+
+h2 {
+    margin-left: 5%;
+    font-size: 20px;
+    color: white;
+}
+
+p {
+    margin: 20px 5%;
+    color: hsl(215, 51%, 70%);
+}
+
+.container .mana {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.mana span:first-of-type a {
+    color: hsl(178, 100%, 50%);
+}
+
+.mana span img {
+    margin-right: 5px;
+}
+
+.mana span:last-of-type a {
+    color: hsl(215, 51%, 70%);
+    /* margin-left: -50px; */
+}
+
+.mana span a {
+    text-decoration: none;
+    /* position: absolute; */
+}
+
+hr {
+    margin: 20px 0;
+    width: 90%;
+    margin-left: 5%;
+    border: none;
+    height: 2px;
+    background-color: hsl(215, 32%, 27%);
+}
+
+.avatar img {
+    width: 15%;
+    border: solid 1px white;
+    border-radius: 50%;
+}
+
+.avatar {
+    /* margin-bottom: 10px; */
+    color: hsl(215, 51%, 70%);
+    position: relative;
+    margin-left: 5%;
+}
+
+.avatar span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+}
+
+.avatar span a {
+    color: white;
+}
+
+.avatar span a:hover,
+h2:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.test {
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 45%;
+    margin: 5%;
+    border-radius: 10px;
+    background-color: rgba(0, 255, 255, 0.412);
+    visibility: hidden;
+}
+
+.hidden img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.test:hover .hidden {
+    visibility: visible;
+}
+
+@media (max-width:900px) {
+    .container {
+        width: 80%;
+    }
+}
